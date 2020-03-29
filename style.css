@@ -50,6 +50,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   transition: 0.4s linear;
+  pointer-events: none;
 }
 .search-box-input::placeholder {
   font-size: 16px;
