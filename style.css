@@ -6,6 +6,7 @@
 body {
   width: 100%;
   margin: 2em auto 0 auto;
+  font-family: "Be Vietnam";
 }
 .title {
   position: absolute;
@@ -29,7 +30,12 @@ body {
   overflow: hidden;
 }
 .search-box:focus-within {
-  max-width: 300px;
+  max-width: 400px;
+}
+.search-box-input:focus-within {
+  background-color: whitesmoke;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding-right: 50px;
 }
 .search-box-input {
   display: block;
@@ -40,12 +46,13 @@ body {
   border-radius: 40px;
   background-color: #000000;
   padding: 15px;
-  color: white;
+  color: black;
   font-size: 20px;
   cursor: pointer;
   transition: 0.4s linear;
 }
 .search-box-input::placeholder {
+  font-size: 16px;
   color: #000000;
 }
 .search-box-icon {
