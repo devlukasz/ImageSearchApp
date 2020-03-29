@@ -1,4 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  width: 80%;
+  width: 100%;
   margin: 2em auto 0 auto;
+}
+.title {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, -50%);
+}
+.container {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 53px;
+  transition: 0.4s linear;
+  overflow: hidden;
+}
+.search-box:focus-within {
+  max-width: 300px;
+}
+.search-box-input {
+  display: block;
+  appearance: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  background-color: #000000;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s linear;
+}
+.search-box-input::placeholder {
+  color: #000000;
+}
+.search-box-icon {
+  position: absolute;
+  right: calc(53px / 2);
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.search-box-icon path,
+.search-box-icon polygon,
+.search-box-icon rect {
+  fill: mediumaquamarine;
+  transition: 0.4s linear;
+}
+
+.search-box-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
