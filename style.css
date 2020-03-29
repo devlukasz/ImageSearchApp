@@ -43,7 +43,7 @@ body {
   width: 100%;
   border: none;
   outline: none;
-  border-radius: 40px;
+  border-radius: 100px;
   background-color: #000000;
   padding: 15px;
   color: black;
@@ -62,7 +62,7 @@ body {
   transform: translate(50%, -50%);
   width: 30px;
   height: 30px;
-  pointer-events: none;
+  cursor: pointer;
 }
 .search-box-icon path,
 .search-box-icon polygon,
