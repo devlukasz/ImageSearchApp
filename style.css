@@ -46,7 +46,6 @@ body {
 .images {
   position: absolute;
   top: 270px;
-
   column-count: 3;
 }
 .images img {

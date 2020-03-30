@@ -18,6 +18,7 @@ function formSubmit(event) {
 function search(searchTerm) {
   const url = `${API_URL}${searchTerm}`;
   loadingImg.style.display = "";
+  imageSection.innerHTML = "";
   return fetch(url)
     .then(respone => respone.json())
     .then(result => {
@@ -31,4 +32,5 @@ function showImages(images) {
     imageSection.appendChild(imgElement);
   });
   loadingImg.style.display = "none";
+  input.value.innerHTML = "";
 }
