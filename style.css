@@ -66,6 +66,11 @@ body {
   color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
+.search-box:focus-within .search-box-icon {
+  background: var(--clr-primary);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
 .search-box-input {
   font-weight: 200;
   font-size: 18px;
@@ -88,7 +93,6 @@ body {
   font-size: 16px;
   color: #000000;
 }
-
 .search-box-icon {
   font-size: 1.5rem;
   margin-left: auto;
