@@ -43,6 +43,15 @@ body {
   position: absolute;
   top: 300px;
 }
+.images {
+  position: absolute;
+  top: 270px;
+
+  column-count: 3;
+}
+.images img {
+  width: 100%;
+}
 .search-box {
   --size: 60px;
   border: 2px solid var(--clr-primary);

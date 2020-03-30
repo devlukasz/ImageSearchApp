@@ -27,7 +27,7 @@ function search(searchTerm) {
 function showImages(images) {
   images.forEach(image => {
     const imgElement = document.createElement("img");
-    imgElement.src = image.urls.full;
+    imgElement.src = image.urls.regular;
     imageSection.appendChild(imgElement);
   });
   loadingImg.style.display = "none";
